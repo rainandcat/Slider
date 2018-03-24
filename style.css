@@ -1,0 +1,152 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/*文字底線 清除*/
+a{
+    text-decoration: none;
+}
+/*ul 預設 清除*/
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+/*title 置中*/
+h1#main_title{
+    text-align: center;
+}
+
+
+/*sliders image 先隱藏*/
+.sliders {
+  display: none;
+  width:100%;
+}
+img {vertical-align: middle;}
+
+/*----------------Manual Slideshow Start----------------*/
+
+/* Slideshow container 設定*/
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next and previous buttons 設定*/
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: #ffffff5e;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+
+/* Position the "next button" to the right */
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover, .am-slider-prev:hover, .am-slider-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+/*----------------Manual Slideshow End----------------*/
+
+/*----------------Automatic Slideshow Start----------------*/
+.slideshow2-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/*----------------Automatic Slideshow End----------------*/
+
+/*----------------Automatic and Manual Slideshow Start----------------*/
+
+/*sliders container */
+.slideshow3-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 15px
+}
+
+.slideshow3-container .slideshow3-slider{
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow3-container ul {
+  position: absolute;
+  list-style: none;
+  width: 3564px;
+}
+
+.slideshow3-container ul li {
+  float: left;
+  text-align: center;
+  height: 400px;
+  line-height: 400px;
+  padding-left: 0;
+  color: #ddd;
+}
+
+/*sliders image */
+.Carousel-slider.sliders {
+  display: inline;
+}
+
+/*Automatic and Manual Next and previous buttons 設定*/
+.Carousel-slider-prev, .am-slider-next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  top: 50%;
+  margin-top: -22px;
+  color: white;
+  background-color: #ffffff5e;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.Carousel-slider-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/*----------------Automatic and Manual Slideshow End----------------*/

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Slider</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!--import jQuery檔案-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<style>
+  
+</style>
+
+</head>
+<body>
+
+  <h1 id="main_title">Slider</h1>
+
+  <h2>1.Manual Slideshow</h2>
+
+  <div class="slideshow-container">
+    <img class="manual-slider sliders" src="https://www.w3schools.com/w3css/img_fjords.jpg">
+    <img class="manual-slider sliders" src="https://www.w3schools.com/w3css/img_lights.jpg">
+    <img class="manual-slider sliders" src="https://www.w3schools.com/w3css/img_mountains.jpg">
+
+    <button class="prev" onclick="plusSlider(-1)">&#10094;</button>
+    <button class="next" onclick="plusSlider(1)">&#10095;</button>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlider(1)"></span> 
+    <span class="dot" onclick="currentSlider(2)"></span> 
+    <span class="dot" onclick="currentSlider(3)"></span> 
+  </div>
+
+  <br>
+  <h2>2.Automatic Slideshow</h2>
+
+  <div class="slideshow2-container">
+    <img class="auto-slider sliders" src="https://www.w3schools.com/w3css/img_fjords.jpg">
+    <img class="auto-slider sliders" src="https://www.w3schools.com/w3css/img_lights.jpg">
+    <img class="auto-slider sliders" src="https://www.w3schools.com/w3css/img_mountains.jpg">
+  </div>
+
+  <br>
+  <h2>3.Automatic and Manual Slideshow(jQuery)</h2>
+
+  <div class="slideshow3-container">
+    <div class="slideshow3-slider" data-jcarousel="true" >
+      <ul>
+        <li>
+          <img class="Carousel-slider sliders" src="https://www.w3schools.com/w3css/img_fjords.jpg">
+        </li>
+        <li>
+          <img class="Carousel-slider sliders" src="https://www.w3schools.com/w3css/img_lights.jpg">
+        </li>
+        <li>
+          <img class="Carousel-slider sliders" src="https://www.w3schools.com/w3css/img_mountains.jpg"> 
+        </li>
+      </ul>
+      <button class="Carousel-slider-prev">&#10094;</button>
+      <button class="Carousel-slider-next">&#10095;</button>
+    </div>
+  </div>
+
+
+</body>
+
+<!--自行撰寫的js檔案-->
+<script type="text/javascript" src="slider_script.js"></script>
+<script>
+    //設定預設值 Slider起始圖片  注意:我這邊是Import js檔，由於網頁載入優先順序關係，"設定"要寫在網頁下方才會啟動
+    //Manual Slide
+    setSlider();
+    //Automatic 
+    autoSliders();
+</script>
+
+</html>
